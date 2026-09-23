@@ -292,26 +292,68 @@ h2 {
 }
 
 .diagram {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 0 26px;
+  position: relative;
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 4px 0 4px 44px;
+  counter-reset: diagram-counter;
+}
+
+.diagram::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 22px;
+  bottom: 22px;
+  width: 1px;
+  background: var(--border);
 }
 
 .diagram-step {
-  border: 1px solid var(--border);
-  background: var(--bg);
-  border-radius: var(--radius);
-  padding: 9px 18px;
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  text-align: center;
+  counter-increment: diagram-counter;
+  position: relative;
+  padding: 13px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.diagram-arrow {
+.diagram-step::before {
+  content: counter(diagram-counter, decimal-leading-zero);
+  position: absolute;
+  left: -44px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.diagram-step-end::before {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.diagram-label {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.diagram-sub {
+  font-size: 0.78rem;
   color: var(--text-muted);
-  font-size: 0.85rem;
-  line-height: 1.4;
 }
 
 .project-body h4 {
