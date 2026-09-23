@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vipina M — Data Engineer</title>
+<meta name="description" content="Vipina M, Data Engineer — Azure Data Factory, Databricks, PySpark, SQL, ADLS Gen2.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#home" class="logo">VM</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero wrap">
+    <p class="hero-role">Data Engineer</p>
+    <h1>Vipina M</h1>
+    <p class="hero-statement">Building and supporting data pipelines using Azure Data Factory, Databricks, PySpark, SQL and ADLS Gen2.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View projects</a>
+      <a href="VIPINA_M_Resume.pdf" class="btn btn-secondary" download>Download resume</a>
+    </div>
+    <div class="hero-links">
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="dot-sep" aria-hidden="true">/</span>
+      <a href="mailto:vipina41498@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section wrap">
+    <h2>About</h2>
+    <p class="about-text">
+      I'm a Data Engineer with 2+ years of experience working on data ingestion, ETL pipelines, data transformation, and validation.
+      My hands-on experience includes Azure Data Factory, Azure Databricks, PySpark, SQL, and ADLS Gen2. I've worked on building and
+      supporting batch and incremental data pipelines, implementing data-quality checks, and troubleshooting pipeline and
+      transformation issues. I also hold an MSc in Data Science, which complements my practical data engineering experience with a
+      foundation in data analysis and machine learning.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section wrap">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Data Engineering</h3>
+        <ul>
+          <li>Azure Data Factory</li>
+          <li>Azure Databricks</li>
+          <li>ADLS Gen2</li>
+          <li>Delta Lake</li>
+          <li>ETL Pipelines</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Programming</h3>
+        <ul>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>PySpark</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Data Processing</h3>
+        <ul>
+          <li>Data Transformation</li>
+          <li>Data Validation</li>
+          <li>Incremental Processing</li>
+          <li>Data Cleaning</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Databases</h3>
+        <ul>
+          <li>SQL Server</li>
+          <li>MySQL</li>
+          <li>Teradata</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Analytics &amp; Visualization</h3>
+        <ul>
+          <li>Power BI</li>
+          <li>Excel</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git</li>
+          <li>Azure Key Vault</li>
+          <li>Unity Catalog</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section wrap">
+    <h2>Experience</h2>
+    <div class="exp-header">
+      <div>
+        <h3>Data Engineer</h3>
+        <p class="exp-sub">Amigo Infotechs</p>
+      </div>
+      <p class="exp-date">June 2024 — Present</p>
+    </div>
+
+    <div class="exp-project">
+      <div class="exp-project-header">
+        <h4>Asphalte — End-to-End Azure Retail Data Platform</h4>
+        <span class="exp-date-small">Aug 2024 — Dec 2025</span>
+      </div>
+      <ul class="exp-list">
+        <li>Developed ADF pipelines for ingestion from SQL databases, SFTP files, REST APIs and application sources.</li>
+        <li>Implemented parameterized pipelines for initial and incremental (watermark-based) processing.</li>
+        <li>Developed PySpark/Spark SQL transformations in Databricks for cleansing, standardization, deduplication and business rules.</li>
+        <li>Contributed to Gold fact and dimension datasets using Delta Lake and incremental MERGE operations.</li>
+        <li>Supported production troubleshooting using ADF Monitor and Databricks logs.</li>
+      </ul>
+    </div>
+
+    <div class="exp-project">
+      <div class="exp-project-header">
+        <h4>Arrow Data Migration</h4>
+        <span class="exp-date-small">Jan 2026 — Present</span>
+      </div>
+      <ul class="exp-list">
+        <li>Extracted data from Teradata using PySpark and the Teradata JDBC driver, generating Parquet files for staging.</li>
+        <li>Migrated data to ADLS containers and ingested it through parameterized Synapse pipelines.</li>
+        <li>Built pipeline activities including Get Metadata, Lookup, ForEach, Copy Data, Filter and Stored Procedures.</li>
+        <li>Built validation pipelines comparing source and target using record counts, null checks and numeric-sum comparisons.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section wrap">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <div class="project-card-head">
+        <h3>Azure Retail Data Platform</h3>
+        <p class="project-tech">Azure Data Factory · ADLS Gen2 · Databricks · PySpark · Delta Lake</p>
+      </div>
+
+      <div class="diagram" aria-label="Architecture: Source Systems to Validated Datasets">
+        <div class="diagram-step">Source Systems</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Azure Data Factory</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">ADLS Gen2</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Azure Databricks</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">PySpark / Spark SQL</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Delta Lake</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Validated Datasets</div>
+      </div>
+
+      <div class="project-body">
+        <h4>What I worked on</h4>
+        <ul class="tag-list">
+          <li>Data ingestion</li>
+          <li>Initial and incremental loads</li>
+          <li>Parameterized ADF pipelines</li>
+          <li>PySpark transformations</li>
+          <li>Data cleansing and deduplication</li>
+          <li>Schema validation</li>
+          <li>Delta Lake MERGE operations</li>
+          <li>Source-to-target validation</li>
+          <li>Production troubleshooting</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-card-head">
+        <h3>Arrow Data Migration</h3>
+        <p class="project-tech">PySpark · JDBC · Parquet · ADLS · Synapse Pipelines</p>
+      </div>
+
+      <div class="diagram" aria-label="Architecture: Teradata to Validation">
+        <div class="diagram-step">Teradata</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">PySpark + JDBC</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Parquet (Staging)</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">ADLS</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Synapse Pipelines</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Synapse</div>
+        <div class="diagram-arrow">↓</div>
+        <div class="diagram-step">Validation</div>
+      </div>
+
+      <div class="project-body">
+        <h4>What I worked on</h4>
+        <ul class="tag-list">
+          <li>Extracted data from Teradata using PySpark and the Teradata JDBC driver</li>
+          <li>Generated Parquet files for staging</li>
+          <li>Built Synapse pipelines for data ingestion</li>
+          <li>Used Get Metadata, Lookup, ForEach, Copy Data, Filter and Stored Procedure activities</li>
+          <li>Source-to-target validation using record counts, null checks and numeric-sum comparisons</li>
+        </ul>
+        <p class="project-note">My role on this migration centered on the PySpark extraction, staging and validation steps — not Teradata database administration or design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I WORK -->
+  <section id="how-i-work" class="section wrap">
+    <h2>How I work</h2>
+    <div class="work-grid">
+      <div class="work-card">
+        <h3>Ingest</h3>
+        <p>Working with source data and building ingestion pipelines from databases, files and APIs.</p>
+      </div>
+      <div class="work-card">
+        <h3>Transform</h3>
+        <p>Using PySpark and Spark SQL for cleaning, standardization and business transformations.</p>
+      </div>
+      <div class="work-card">
+        <h3>Validate</h3>
+        <p>Performing record-count, null, duplicate, schema and business-level validation.</p>
+      </div>
+      <div class="work-card">
+        <h3>Troubleshoot</h3>
+        <p>Using ADF monitoring and Databricks logs to investigate failures and support reruns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section wrap">
+    <h2>Education</h2>
+    <div class="edu-item">
+      <div>
+        <h3>MSc Data Science</h3>
+        <p class="exp-sub">Manipal Academy of Higher Education</p>
+      </div>
+      <div class="edu-meta">
+        <p class="exp-date">2024 — 2026</p>
+        <p class="edu-cgpa">CGPA 9/10</p>
+      </div>
+    </div>
+    <div class="edu-item">
+      <div>
+        <h3>B.E. Civil Engineering</h3>
+        <p class="exp-sub">SJC Institute of Technology</p>
+      </div>
+      <div class="edu-meta">
+        <p class="exp-date">2016 — 2020</p>
+        <p class="edu-cgpa">CGPA 8.26/10</p>
+      </div>
+    </div>
+
+    <h2 class="cert-heading">Certifications</h2>
+    <ul class="cert-list">
+      <li>Certified Data Science Professional — Bootcamp</li>
+      <li>Google Advanced Data Analytics — Google / Coursera</li>
+      <li>Exploratory Data Analysis for Machine Learning — IBM / Coursera</li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section wrap contact-section">
+    <h2>Let's connect</h2>
+    <p class="contact-line">Open to Data Engineer and Azure Data Engineer opportunities.</p>
+    <div class="contact-actions">
+      <a href="mailto:vipina41498@gmail.com" class="btn btn-primary">Email me</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Vipina M — Data Engineer</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
