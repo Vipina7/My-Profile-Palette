@@ -168,21 +168,15 @@
         <p class="project-tech">Azure Data Factory · ADLS Gen2 · Databricks · PySpark · Delta Lake</p>
       </div>
 
-      <div class="diagram" aria-label="Architecture: Source Systems to Validated Datasets">
-        <div class="diagram-step">Source Systems</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Azure Data Factory</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">ADLS Gen2</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Azure Databricks</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">PySpark / Spark SQL</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Delta Lake</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Validated Datasets</div>
-      </div>
+      <ol class="diagram" aria-label="Architecture: Source Systems to Validated Datasets">
+        <li class="diagram-step"><span class="diagram-label">Source Systems</span><span class="diagram-sub">SQL · SFTP · REST APIs</span></li>
+        <li class="diagram-step"><span class="diagram-label">Azure Data Factory</span><span class="diagram-sub">Ingestion pipelines</span></li>
+        <li class="diagram-step"><span class="diagram-label">ADLS Gen2</span><span class="diagram-sub">Raw storage</span></li>
+        <li class="diagram-step"><span class="diagram-label">Azure Databricks</span><span class="diagram-sub">Compute environment</span></li>
+        <li class="diagram-step"><span class="diagram-label">PySpark / Spark SQL</span><span class="diagram-sub">Cleansing · dedup · rules</span></li>
+        <li class="diagram-step"><span class="diagram-label">Delta Lake</span><span class="diagram-sub">Incremental MERGE</span></li>
+        <li class="diagram-step diagram-step-end"><span class="diagram-label">Validated Datasets</span><span class="diagram-sub">Source-to-target checks</span></li>
+      </ol>
 
       <div class="project-body">
         <h4>What I worked on</h4>
@@ -206,21 +200,15 @@
         <p class="project-tech">PySpark · JDBC · Parquet · ADLS · Synapse Pipelines</p>
       </div>
 
-      <div class="diagram" aria-label="Architecture: Teradata to Validation">
-        <div class="diagram-step">Teradata</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">PySpark + JDBC</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Parquet (Staging)</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">ADLS</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Synapse Pipelines</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Synapse</div>
-        <div class="diagram-arrow">↓</div>
-        <div class="diagram-step">Validation</div>
-      </div>
+      <ol class="diagram" aria-label="Architecture: Teradata to Validation">
+        <li class="diagram-step"><span class="diagram-label">Teradata</span><span class="diagram-sub">On-premises source</span></li>
+        <li class="diagram-step"><span class="diagram-label">PySpark + JDBC</span><span class="diagram-sub">Extraction</span></li>
+        <li class="diagram-step"><span class="diagram-label">Parquet (Staging)</span><span class="diagram-sub">Linux / Spark environment</span></li>
+        <li class="diagram-step"><span class="diagram-label">ADLS</span><span class="diagram-sub">Cloud landing</span></li>
+        <li class="diagram-step"><span class="diagram-label">Synapse Pipelines</span><span class="diagram-sub">Get Metadata · ForEach · Copy Data</span></li>
+        <li class="diagram-step"><span class="diagram-label">Synapse</span><span class="diagram-sub">Target database</span></li>
+        <li class="diagram-step diagram-step-end"><span class="diagram-label">Validation</span><span class="diagram-sub">Count · null · numeric-sum checks</span></li>
+      </ol>
 
       <div class="project-body">
         <h4>What I worked on</h4>
